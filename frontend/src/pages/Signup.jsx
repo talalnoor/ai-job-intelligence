@@ -48,7 +48,7 @@ export default function Signup({ onSuccess, onSwitchToLogin }) {
             <label className="block text-sm font-medium text-gray-400 mb-2">Full name</label>
             <input
               type="text"
-              placeholder="Talal Noor"
+              placeholder="Jane Doe"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
