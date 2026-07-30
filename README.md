@@ -2,6 +2,16 @@
 
 AI-powered career intelligence platform that analyzes resumes, ranks job compatibility, identifies skill gaps, and generates personalized career roadmaps using semantic embeddings, NLP, and LLMs.
 
+## Screenshots
+
+| Sign Up | Upload & Compare |
+|---|---|
+| ![Signup](screenshots/signup.png) | ![Dashboard](screenshots/dashboard.png) |
+
+| Job Intelligence Report | Market Demand & AI Insights |
+|---|---|
+| ![Report](screenshots/report.png) | ![Market Insights](screenshots/market-insights.png) |
+
 ## Overview
 
 AI Job Intelligence answers a simple question with rigorous methods: *given my resume and a set of target jobs, which ones actually fit, why, and what should I learn next?* Rather than a keyword-matching resume scanner or a thin LLM wrapper, the system combines rule-based NLP skill extraction, Sentence Transformer embeddings, a transparent weighted scoring engine, and LLM-generated qualitative reasoning — with a hard architectural rule that the LLM never controls the numeric score.
