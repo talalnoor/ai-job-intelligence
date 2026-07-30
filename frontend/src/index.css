@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0f;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2d3a;
+  border-radius: 8px;
+}
