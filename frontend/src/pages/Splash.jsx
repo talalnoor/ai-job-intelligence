@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Sparkles, Brain, Target, TrendingUp } from 'lucide-react'
 
-export default function Splash({ onContinue }) {
+export default function Splash({ onContinue, onAbout }) {
   const [visible, setVisible] = useState(false)
   const [exiting, setExiting] = useState(false)
 
@@ -67,9 +67,21 @@ export default function Splash({ onContinue }) {
           </div>
         </div>
 
-        <p className="text-gray-600 text-sm animate-pulse">
+        <p className="text-gray-600 text-sm animate-pulse mb-4">
           Tap anywhere to continue
         </p>
+
+        {onAbout && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation()
+              onAbout()
+            }}
+            className="text-gray-600 text-sm underline decoration-gray-700 hover:text-gray-400 transition-colors"
+          >
+            About this project
+          </button>
+        )}
       </div>
     </div>
   )

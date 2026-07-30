@@ -15,7 +15,7 @@ const LOADING_STAGES = [
   'Ranking jobs...',
 ]
 
-export default function Analyze() {
+export default function Analyze({ onAbout }) {
   const { user, logout, token } = useAuth()
   const [view, setView] = useState('new') // 'new' | 'history'
   const [resumeData, setResumeData] = useState(null)
@@ -89,6 +89,14 @@ export default function Analyze() {
         <div className="flex items-center justify-between mb-6">
           <p className="text-sm text-gray-500">Hi, {user?.name?.split(' ')[0]}</p>
           <div className="flex items-center gap-4">
+            {onAbout && (
+              <button
+                onClick={onAbout}
+                className="text-sm text-gray-500 hover:text-white transition-colors"
+              >
+                About
+              </button>
+            )}
             <button
               onClick={() => setView(view === 'new' ? 'history' : 'new')}
               className="text-sm text-gray-500 hover:text-white flex items-center gap-1.5 transition-colors"
