@@ -6,10 +6,10 @@ app = FastAPI(title="AI Job Intelligence API")
 
 app.add_middleware(
     CORSMiddleware,
- allow_origins=[
-    "http://localhost:5173",
-    "https://ai-job-intelligence-production-aede.up.railway.app",
-],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://ai-job-intelligence-production-aede.up.railway.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
