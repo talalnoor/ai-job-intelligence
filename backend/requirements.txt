@@ -10,4 +10,4 @@ pytest
 motor
 passlib[bcrypt]
 python-jose[cryptography]
-bcrypt
+bcrypt 
