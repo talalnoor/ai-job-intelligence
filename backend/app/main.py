@@ -8,7 +8,7 @@ app.add_middleware(
     CORSMiddleware,
  allow_origins=[
     "http://localhost:5173",
-    "https://your-new-railway-frontend-url.up.railway.app",
+    "https://ai-job-intelligence-production-aede.up.railway.app",
 ],
     allow_credentials=True,
     allow_methods=["*"],
