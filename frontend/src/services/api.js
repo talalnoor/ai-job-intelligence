@@ -1,6 +1,6 @@
 import axios from 'axios'
-const API_BASE_URL = 'https://ai-job-intelligence-production.up.railway.app'
 
+const API_BASE_URL = 'https://ai-job-intelligence-production.up.railway.app'
 export async function uploadResume(file) {
   const formData = new FormData()
   formData.append('file', file)
